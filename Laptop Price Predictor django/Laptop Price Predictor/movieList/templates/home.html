@@ -14,7 +14,7 @@
     <form action="{% url 'result' %}" method="get">
       <div class="search-container">
           <label class="text-light">Company</label>
-            <select name="company" class="form-select" aria-label="Default select example">
+            <select name="company" class="form-select form-select-lg" aria-label="Default select example">
                 {% for c in  Company  %}
                 <option value="{{c}}" selected>{{c}}</option>
                 {% endfor %}
@@ -22,7 +22,7 @@
       </div>
         <div class="search-container">
           <label class="text-light">TypeName</label>
-            <select name="TypeName" class="form-select" aria-label="Default select example">
+            <select name="TypeName" class="form-select form-select-lg" aria-label="Default select example">
                 {% for c in  TypeName  %}
                 <option value="{{c}}" selected>{{c}}</option>
                 {% endfor %}
@@ -31,7 +31,7 @@
 <!-- -->
         <div class="search-container">
           <label class="text-light">Weight</label>
-            <select name="Weight" class="form-select" aria-label="Default select example">
+            <select name="Weight" class="form-select form-select-lg" aria-label="Default select example">
                 {% for c in  Weight  %}
                 <option value="{{c}}" selected>{{c}}</option>
                 {% endfor %}
@@ -40,7 +40,7 @@
 <!--        -->
         <div class="search-container">
           <label class="text-light">Ram</label>
-            <select name="Ram" class="form-select" aria-label="Default select example">
+            <select name="Ram" class="form-select form-select-lg" aria-label="Default select example">
                 {% for c in  Ram  %}
                 <option value="{{c}}" selected>{{c}}</option>
                 {% endfor %}
@@ -50,7 +50,7 @@
 
         <div class="search-container">
           <label class="text-light">Touchscreen</label>
-            <select name="Touchscreen" class="form-select" aria-label="Default select example">
+            <select name="Touchscreen" class="form-select form-select-lg" aria-label="Default select example">
                 {% for c in  Touchscreen  %}
                 <option value="{{c}}" selected>{{c}}</option>
                 {% endfor %}
@@ -59,7 +59,7 @@
 <!--        -->
         <div class="search-container">
           <label class="text-light">Ips Display</label>
-            <select name="Ips" class="form-select" aria-label="Default select example">
+            <select name="Ips" class="form-select form-select-lg" aria-label="Default select example">
                 {% for c in  Ips  %}
                 <option value="{{c}}" selected>{{c}}</option>
                 {% endfor %}
@@ -68,7 +68,7 @@
 <!--        -->
              <div class="search-container">
           <label class="text-light">PPI of Display</label>
-            <select name="ppi" class="form-select" aria-label="Default select example">
+            <select name="ppi" class="form-select form-select-lg" aria-label="Default select example">
                 {% for c in  ppi  %}
                 <option value="{{c}}" selected>{{c}}</option>
                 {% endfor %}
@@ -77,7 +77,7 @@
 <!--        -->
              <div class="search-container">
           <label class="text-light">CPU Brand</label>
-            <select name="Cpu_brand" class="form-select" aria-label="Default select example">
+            <select name="Cpu_brand" class="form-select form-select-lg" aria-label="Default select example">
                 {% for c in  Cpu_brand  %}
                 <option value="{{c}}" selected>{{c}}</option>
                 {% endfor %}
@@ -86,7 +86,7 @@
 <!--        -->
              <div class="search-container">
           <label class="text-light">Hard Drive</label>
-            <select name="HDD" class="form-select" aria-label="Default select example">
+            <select name="HDD" class="form-select form-select-lg" aria-label="Default select example">
                 {% for c in  HDD  %}
                 <option value="{{c}}" selected>{{c}}</option>
                 {% endfor %}
@@ -95,7 +95,7 @@
 <!--        -->
              <div class="search-container">
           <label class="text-light">Solid State Drive</label>
-            <select name="SSD" class="form-select" aria-label="Default select example">
+            <select name="SSD" class="form-select form-select-lg" aria-label="Default select example">
                 {% for c in  SSD  %}
                 <option value="{{c}}" selected>{{c}}</option>
                 {% endfor %}
@@ -104,7 +104,7 @@
 <!--        -->
              <div class="search-container">
           <label class="text-light">GPU Brand</label>
-            <select name="gpu_Brand" class="form-select" aria-label="Default select example">
+            <select name="gpu_Brand" class="form-select form-select-lg" aria-label="Default select example">
                 {% for c in  gpu_Brand  %}
                 <option value="{{c}}" selected>{{c}}</option>
                 {% endfor %}
@@ -113,13 +113,15 @@
 <!--        -->
              <div class="search-container">
           <label class="text-light">Operating System</label>
-            <select name="os" class="form-select" aria-label="Default select example">
+            <select name="os" class="form-select form-select-lg" aria-label="Default select example">
                 {% for c in  os  %}
                 <option value="{{c}}" selected>{{c}}</option>
                 {% endfor %}
             </select>
         </div>
-        <input type="submit" value="Submit">
+          <div class="submit-container">
+        <input type="submit" class="button" value="Submit">
+          </div>
     </form>
     <div class="mt-3 card-footer bg-transparent border-success text-white-50" style="font-size: 0.8rem;">Project by: Kamal Maurya</div>
     </div>
